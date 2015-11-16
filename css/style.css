@@ -1,0 +1,144 @@
+body
+{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	padding-top: 0px;
+}
+
+h1
+{
+	text-align:center;
+	font-size: 3.5em;
+	margin:0;
+	color: #000000;
+	
+	-webkit-stroke-width: 5.3px;
+   -webkit-stroke-color: #FFFFFF;*/
+   -webkit-fill-color: #000000;
+   /*text-shadow: 4px 0px 20px #666666;*/
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+   -moz-transition: width 0.3s; /* Firefox 4 */
+   -o-transition: width 0.3s; /* Opera */
+}
+
+h2
+{
+	margin:0;
+	padding:0;
+	color: #000000;
+}
+
+h3
+{
+	margin:0;
+	padding:0;
+	color: #000000;
+}
+
+h2:hover,h3:hover
+{
+	/*box-shadow:0px 0px 30px red; /*CSS3 shadow: 30px blurred shadow all around image*/
+	/*-webkit-box-shadow:0px 0px 15px red; /*Safari shadow version*/
+	/*-moz-box-shadow:0px 0px 15px red; /*Mozilla shadow version*/
+	opacity: 1;
+	color:Red;
+	background-color: white;
+}
+
+.people
+{
+	float: left;
+	/*width: 25%;*/
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin-top: 2%;
+	margin-bottom: 5%;*/
+	padding-top:2%;
+}
+
+/*.students .people
+{
+	position: relative;
+	width:100%;
+	float: left;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 25%;
+}*/
+
+.people p
+{
+	word-wrap: break-word;
+	cursor: pointer;
+	word-break: keep-all;
+	text-align: justify;
+    /*text-justify: inter-word;*/
+}
+
+.people img
+{
+	border-radius:50% 50% 50% 50%;
+	-webkit-transform:scale(1); /*Webkit: Scale down image to 0.8x original size*/
+	-moz-transform:scale(1); /*Mozilla scale version*/
+	-o-transform:scale(1); /*Opera scale version*/
+	-webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+	-moz-transition-duration: 0.5s; /*Mozilla duration version*/
+	-o-transition-duration: 0.5s; /*Opera duration version*/
+	opacity: 0.9; /*initial opacity of images*/
+	/*margin: 0 10px 5px 0; /*margin between images*/
+}
+
+.people img:hover
+{
+	-webkit-transform:scale(1.2); /*Webkit: Scale up image to 1.2x original size*/
+	-moz-transform:scale(1.2); /*Mozilla scale version*/
+	-o-transform:scale(1.2); /*Opera scale version*/
+	/*box-shadow:0px 0px 30px red; /*CSS3 shadow: 30px blurred shadow all around image*/
+	/*-webkit-box-shadow:0px 0px 15px red; /*Safari shadow version*/
+	/*-moz-box-shadow:0px 0px 15px red; /*Mozilla shadow version*/
+	opacity: 1;
+}
+
+.headerul
+{
+	padding-right: 2%;
+}
+
+#home
+{
+	margin-top: 35px;
+}
+
+#about
+{
+	margin-top: 5%;
+}
+
+#team
+{
+	margin-top: 5%;
+}
+
+.heading
+{
+	font-family: Impact;
+}
+
+.coloring
+{
+	background-color: rgb(0,185,245);
+	color:white;
+	padding: 0.5%;
+	margin: 0;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
