@@ -21,5 +21,7 @@ now there are the following commands available
 
 
 
+<br>
 
-<small>used yoeman</small>
+
+<p style="font-size:8px">used yoeman</p>
