@@ -180,6 +180,20 @@ h3
 	position: inline-block;
 }
 
+.chap{
+	width: 80%;
+	margin-left: 12.5%;
+}
+
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+
 .aim{
 	font-size: 1.5em;
 	font-family: 'Libre Baskerville', serif;
