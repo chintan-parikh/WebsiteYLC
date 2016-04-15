@@ -234,3 +234,8 @@ h3
 	width: 90%;
 	cursor: pointer;
 }
+
+.thead-inverse{
+	color: white;
+	background-color: #787878;
+}
