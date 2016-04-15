@@ -228,3 +228,9 @@ h3
   margin-top:10%;
   width:5%;
 }
+
+.ci{
+	height: 90%;
+	width: 90%;
+	cursor: pointer;
+}
