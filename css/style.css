@@ -239,3 +239,16 @@ h3
 	color: white;
 	background-color: #787878;
 }
+
+.avmtext {
+	font-size: 2em;
+	font-family: 'Arvo', serif;
+}
+
+.extra{
+	display: inline-block;
+}
+
+.set{
+	height: 10%;
+}
