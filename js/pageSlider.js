@@ -8,16 +8,20 @@ function PageSlider(options) {
 
 }
 
-PageSlider.prototype.eventListener = function (evt) {
+PageSlider.prototype.getId = function (anchor) {
+    return anchor.getAttribute("href").substring(1);
+};
 
-    var id = evt.target.attributes.id;
+PageSlider.prototype.eventListener = function (evt) {
+    var id = this.getId(evt.target);
     this.show(id);
 };
 
 PageSlider.prototype.show = function (id) {
+
     var container = this.findContainer(id);
     this.hideAll()
-    container.show();
+    container.style = "";
 };
 
 PageSlider.prototype.attachToAll = function () {
@@ -50,10 +54,10 @@ PageSlider.prototype.showInitial = function () {
 };
 
 PageSlider.prototype.findContainer = function (id) {
-
     for(var i =0 ;i < this.containers.length;i++){
-        if( $(this.containers[i]).attr("id") == id ){
-            return $(this.containers[i]);
+        if( this.containers[i].id === id ){
+            console.log(this.containers[i]);
+            return this.containers[i];
         }
     }
 
