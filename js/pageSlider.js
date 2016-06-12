@@ -10,7 +10,6 @@ function PageSlider(options) {
 
 PageSlider.prototype.initialize = function () {
     this.containers = $(this.sliderContent);
-    this.nav = $(this.sliderNav);
-    console.log(this.nav);
-    console.log(this.containers);
+    this.nav = $(this.sliderNav).find("a");
+    
 };

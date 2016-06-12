@@ -10,7 +10,7 @@
 
 
     var x = new PageSlider({
-        pagination:".pagination",
+        pagination:".ps-pagination",
         container : ".slides-container"
     });
     x.initialize();
