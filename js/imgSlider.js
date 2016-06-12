@@ -1,15 +1,26 @@
 /* copy loaded thumbnails into carousel */
+
+(function(){
+
+    $(".back-to-top").on("click",function(evt){
+        evt.preventDefault();
+        $('html').animate({ scrollTop: 0 }, 'slow', function () {
+    });
+})
+})();
+
+
 $('.row .thumbnail').on('load', function() {
-  
+
 }).each(function(i) {
   if(this.complete) {
   	var item = $('<div class="item"></div>');
     var itemDiv = $(this).parents('div');
     var title = $(this).parent('a').attr("title");
-    
+
     item.attr("title",title);
   	$(itemDiv.html()).appendTo(item);
-  	item.appendTo('.carousel-inner'); 
+  	item.appendTo('.carousel-inner');
     if (i==0){ // set first item active
      item.addClass('active');
     }
