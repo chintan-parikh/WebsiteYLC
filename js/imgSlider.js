@@ -6,7 +6,14 @@
         evt.preventDefault();
         $('html').animate({ scrollTop: 0 }, 'slow', function () {
     });
-})
+});
+
+
+    var x = new PageSlider({
+        pagination:".pagination",
+        container : ".slides-container"
+    });
+    x.initialize();
 })();
 
 
