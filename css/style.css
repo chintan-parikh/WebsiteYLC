@@ -27,7 +27,7 @@ h1
 	font-size: 3.5em;
 	margin:0;
 	color: #000000;
-	
+
 	-webkit-stroke-width: 5.3px;
    -webkit-stroke-color: #FFFFFF;*/
    -webkit-fill-color: #000000;
@@ -206,7 +206,7 @@ h3
 	font-family: 'Ubuntu', sans-serif;
 	word-wrap: break-word;
 	text-align: justify;
-	color: white;	
+	color: white;
 }
 
 .b1{
@@ -263,4 +263,24 @@ h3
 
 .misi{
 	margin-top: 20%;
+}
+
+/*girish*/
+
+
+.back-to-top {
+background: none;
+margin: 0;
+position: fixed;
+bottom: 10px;
+right: 10px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #ffffff;
+background-color: grey;
+}
+
+.back-to-top i {
+ font-size: 60px;
 }
