@@ -4,7 +4,7 @@
 function PageSlider(options) {
         this.sliderNav = options.pagination;
         this.sliderContent = options.container;
-        this.current = 0;
+        this.current = options.current;
 
 }
 
@@ -42,6 +42,11 @@ PageSlider.prototype.initialize = function () {
     this.identify();
     this.validate();
     this.attachToAll();
+    this.showInitial();
+};
+
+PageSlider.prototype.showInitial = function () {
+    this.show(this.current);
 };
 
 PageSlider.prototype.findContainer = function (id) {
@@ -66,17 +71,11 @@ PageSlider.prototype.hideAll = function () {
 
 
 };
-PageSlider.prototype.moveTo = function (id) {
-
-};
 
 PageSlider.prototype.validate = function () {
 
     if(this.nav.length != this.containers.length){
         throw new Error("the link count and container count dont match");
     }
-
-
-
 
 };

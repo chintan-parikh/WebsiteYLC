@@ -11,7 +11,8 @@
 
     var x = new PageSlider({
         pagination:".ps-pagination",
-        container : ".slides-container"
+        container : ".slides-container",
+        current:"about"
     });
     x.initialize();
 })();
